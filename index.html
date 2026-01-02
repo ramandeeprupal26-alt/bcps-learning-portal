@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCPS – Theory Plan Videos</title>
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>BCPS</h1>
+  <h2>Theory Plan – All Videos</h2>
+</header>
+
+<div class="container">
+
+  <input id="searchBox" placeholder="🔍 Search video...">
+
+  <div class="progress-box">
+    <div id="progressText">Progress: 0%</div>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+  </div>
+
+  <!-- VIDEO CARD EXAMPLE (repeat for all videos) -->
+  <div class="topic">
+    <label>
+      <input type="checkbox" class="watchCheck">
+      1. Introduction to Computer Systems
+    </label>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/qfUZBKDh9BY" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>2. Evolution of Computer Systems – Generations, Types</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/vvrdgwDnMQA" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>3. Block Diagram of a Computer</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/IEYFlGLAhyo?si=XngkHMyELuIKCYA1" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>4. Application Areas & Memory Concepts</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/AVZxC5dtbiM" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>5. Types of Memory & Storage Devices</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/j8hVRx2AFP0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>6. Computer Viruses & Net Etiquette</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VJFaO2-zsCU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>7. Introduction to Number Systems</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/_y9e1A2Ka1Q" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>8. Decimal, Binary, Octal & Hexadecimal Systems</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/MxjJqq3B6JU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>9. Decimal ↔ Binary Conversion</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/FFDMzbrEXaE" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>10. Octal & Hexadecimal Conversion</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-gyDAMNyu_Y" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>11. 1’s and 2’s Complement</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/pXIfEklKsOQ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>12. Binary Codes – BCD & Weighted Codes</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/0UVSPwzGw4U" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>13. ASCII & EBCDIC</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/F17iRZ53Hxg" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>14. Binary Arithmetic – Addition & Subtraction</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/4cjs2GrOf6Y" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>15. Binary Arithmetic – Multiplication & Division</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-f6fjBhu8eA" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>16. Basics of Computer Networking</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/DYgRqIeuwVQ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>17. Types of Networks</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/DYgRqIeuwVQ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>18. Network Topologies</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/uDulBxDb7GM" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>19. Networking Devices</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/vdtqEPKYB5M" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>20. Internet & Networking Protocols</p>
+        </label>
+        <div class="video-wrapper">
+            
+            <iframe src="https://www.youtube.com/embed/YtxLexm-9pI?si=Jd7uKWw7tQAtXpDZ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>20. Internet & Networking Protocols</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/E5bSumTAHZE" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>21. Introduction to Truth Table Logic Gates I – AND, OR, NOT</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/47u7b2yh7s8?si=me1NXS7CMsKFtVSH" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>22. Logic Gates II – NAND, NOR</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/4-kCfYGZDtE?si=KnOVmnIYvEMz6CbO" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>23. Logic Gates II –XOR, XNOR</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Uf0KKh2zRuA?si=pR8CapTmV7OdKSMr" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>24. Boolean Expressions – Functions, SOP, POS</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/YmKmS9bpMqM?si=rPt6nFqQtf2EgbZs" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>25. Implementation of Logic Functions using Gates</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/8pimxa6QkYM?si=QrRJLpvHgyLfNY5o" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>26. Implementation of NAND & NOR Implementations</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/QemDrR82LXQ?si=rFOwVfP7SSr_J6ST" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>27. Boolean Algebra I – Postulates & Laws</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/mp-S1ABU98c?si=-T3v6vsSzij7THeU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>28. Boolean Algebra II – De Morgan’s Theorem, Principle of Duality</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/q900gI1X4XM?si=9S8otm6t8-ejLZHT" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>29. Introduction to K maps, Minterm & Maxterm Concepts </p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dBuuz0EeBZY?si=Qh8CmjoCRa1bdmt8" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>30. Plotting SOP and POS in K Maps</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/HO89lqPptxo?si=tS5ZjJyr8S-7X8vD" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>31. Minimization Techniques –Karnaugh Maps</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/y-aYzGdlM-8?si=InMXlMMFBc3l3keb"  allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>32. Combinational Circuits I – Adders </p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/UR45buZHcNE?si=J0eeZTlHpkA2TTny" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>33. Combinational Circuits I –Subtractors</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/7WoTCwgx0kE?si=jfqdKYIFc0B2h40w" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>34. Combinational Circuits IV – Parity Checker</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/c8qAti1zBVQ?si=fkhtFG7EJDkdicQB" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>35. Introduction to Artificial Intelligence – Definition, history, Types of AI</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/uB3i-qV6VdM?si=3MV3G9Jfy9dgW0pw" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>36. Key Concepts of AI and Applications of AI</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/uB3i-qV6VdM?si=X8c4e_hRr0Y_ytw9" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>37. Terminal Commands</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/uwAqEzhyjtw?si=-R5_iyfq-dbuX98d" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="topic">
+        <label>
+            <input type="checkbox" class="watchCheck" onchange="updateProgress()">
+        <p>38. Basics of LibreOffice</p>
+        </label>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Lt9etJSXkkQ?si=L-YjfOU-IxmIr_p1" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+  <!-- keep remaining videos SAME STRUCTURE -->
+
+<button id="backToTop">↑</button>
+
+<footer>
+  © 2026 BCPS | Designed for Easy Learning
+</footer>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>
